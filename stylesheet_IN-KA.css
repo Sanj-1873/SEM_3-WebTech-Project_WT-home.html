@@ -14,4 +14,12 @@ h1:hover   {
 .Party_1 {
 	
 }
-
+.circle {
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 250, 0, 0.2);
+	right: 10px;
+	top: 40px;
+	text-align: center;
+	flood-color: white
+}
