@@ -1,16 +1,60 @@
 body {
   background-color: lightblue;
+  color : white;
 }
 
-h1 {
+h1{
   color: white;
   text-align: center;
 }
+h1:hover   {
+	color: black;
+}
 
-path#IN-AS:hover, circle:hover {
-  stroke: #002868 !important;
-  stroke-width:2px;
-  stroke-linejoin: round;
-  fill: #002868 !important;
-  cursor: pointer;
+/*path {
+	fill : white;
+	color: white;
+	z-index: 100;
+}*/ 
+/*
+@namespace svg url(http://www.w3.org/2000/svg);
+
+svg|text, svg|foreignObject {
+  display: none !important;
+}*/
+/*
+svg2 {
+	fill: blue;
+}
+*/
+path {
+  /*fill: context-fill;
+  fill-opacity: context-fill-opacity;
+  stroke: context-stroke;
+  stroke-opacity: context-stroke-opacity;
+  stroke-width: context-value;
+  stroke-dasharray: context-value;
+  stroke-dashoffset: context-value;*/
+
+}
+.grow { 
+transition: all .5s ease-in-out; 
+}
+ 
+.grow:hover { 
+transform: scale(0.5); 
+}
+
+.IN-AN:hover {
+	fill:#40b52b ;
+}
+.IN-KA:hover {
+	-moz-transition:color 2s ease-in;
+    -o-transition:color 2s ease-in;
+    -webkit-transition:color 2s ease-in;
+ 
+	fill: #40b52b ;
+}
+.India {
+	fill:#0f3607 ;
 }
