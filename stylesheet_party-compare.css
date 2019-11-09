@@ -1,6 +1,15 @@
-#circle {
-    width: 100px;
-    height: 100px;
-    background: red;
-    border-radius: 50%
-  }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.breakdown{
+    display: flex;
+    justify-content: space-around;
+}
+
+.comparision{
+    display: flex;
+    justify-content: space-around;
+}
