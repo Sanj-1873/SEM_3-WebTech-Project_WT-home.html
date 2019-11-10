@@ -1,62 +1,50 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: lightblue;
+  background-image: linear-gradient( rgb(250, 174, 67), rgb(180, 224, 222),rgb(59, 179, 4));
   color : white;
 }
 
-h1{
-  color: white;
-  text-align: center;
+.India {
+  z-index: 50;
+  fill:#0f3607 ;
 }
-h1:hover   {
-	color: black;
+.glow {
+  transition:all .5s ease-in-out;
+}
+.glow:hover {
+  fill:#40b52b;
+  position: fixed;
 }
 
-/*path {
-	fill : white;
-	color: white;
-	z-index: 100;
-}*/ 
-/*
-@namespace svg url(http://www.w3.org/2000/svg);
 
-svg|text, svg|foreignObject {
-  display: none !important;
-}*/
-/*
-svg2 {
-	fill: blue;
-}
-*/
-path {
-  /*fill: context-fill;
-  fill-opacity: context-fill-opacity;
-  stroke: context-stroke;
-  stroke-opacity: context-stroke-opacity;
-  stroke-width: context-value;
-  stroke-dasharray: context-value;
-  stroke-dashoffset: context-value;*/
-
-}
 .grow { 
 transition: all .5s ease-in-out; 
+z-index: 90;
 }
  
 .grow:hover { 
-transform: scale(0.5); 
+transform: scale(1.2); 
+transform-origin: center;
+transition-duration: 1s;
+fill: #40b52b ;
+position: fixed;
+}
+.box {
+  position: relative;
+  top:10px;
+  left : 5px;
+  width: 100px;
+  max-height: 100px;   
+  padding: 50px;
+  z-index: 100;
+  
 }
 
-.IN-AN:hover {
-	fill:#40b52b ;
-}
-.IN-KA:hover {
-	-moz-transition:color 2s ease-in;
-    -o-transition:color 2s ease-in;
-    -webkit-transition:color 2s ease-in;
- 
-	fill: #40b52b ;
-}
-.India {
-	fill:#0f3607 ;
+.State {
+  position: relative;
+  width: 100px;
+  height: 100px;
+   z-index: 100;
+  fill: black;
 }
