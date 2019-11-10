@@ -23,7 +23,7 @@ function drawCharts(){
         ['Automobile', 2],
         ['Telecom', 8]
     ]);
-    var pie_options = {'title':'Party A', 'width':550, 'height':400};
+    var pie_options = {'title':'Party A', 'width':550, 'height':400, 'backgroundColor': 'blanchedalmond'};
 
     var bar_data = new google.visualization.arrayToDataTable([
         ['Year', 'Amount Speent'],
@@ -39,8 +39,9 @@ function drawCharts(){
         height: 400,
         legend: { position: 'none' },
         chart: { title: 'Money by year',
-                 subtitle: 'by government' },
-        bars: 'horizontal', // Required for Material Bar Charts.
+                 subtitle: 'by government',
+                 backgroundColor: 'blanchedalmond' },
+        bars: 'vertical', // Required for Material Bar Charts.
         axes: {
           x: {
             0: { side: 'top', label: 'Percentage'} // Top x-axis.
