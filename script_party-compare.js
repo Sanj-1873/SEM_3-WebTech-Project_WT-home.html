@@ -5,14 +5,14 @@ function drawPieChart(element, data, options){
     chart.draw(data, options);
 }
 
-function drawColumnChart(element, data, options){
+function drawBarChart(element, data, options){
     var chart = new google.charts.Bar(element);
     chart.draw(data, options);
 }
 
 function drawCharts(){
     var pie_arr=document.getElementsByClassName("pie");
-    var col_arr=document.getElementsByClassName("col");
+    var bar_arr=document.getElementsByClassName("bar");
 
     var pie_data = google.visualization.arrayToDataTable([
         ['Area', 'Money'],
@@ -25,7 +25,7 @@ function drawCharts(){
     ]);
     var pie_options = {'title':'Party A', 'width':550, 'height':400};
 
-    var col_data = new google.visualization.arrayToDataTable([
+    var bar_data = new google.visualization.arrayToDataTable([
         ['Year', 'Amount Speent'],
         ["2018", 44],
         ["2013", 31],
@@ -33,9 +33,10 @@ function drawCharts(){
         ["2005", 10]
       ]);
 
-      var col_options = {
+      var bar_options = {
         title: 'Money by year',
-        width: 900,
+        width: 250,
+        height: 400,
         legend: { position: 'none' },
         chart: { title: 'Money by year',
                  subtitle: 'by government' },
@@ -49,6 +50,6 @@ function drawCharts(){
       };
     for(i=0;i<pie_arr.length;i++)
         drawPieChart(pie_arr[i], pie_data, pie_options);
-    for(i=0; i<col_arr.length; i++)
-        drawColumnChart(col_arr[i], col_data, col_options)
+    for(i=0; i<bar_arr.length; i++)
+        drawBarChart(bar_arr[i], bar_data, bar_options)
 }
