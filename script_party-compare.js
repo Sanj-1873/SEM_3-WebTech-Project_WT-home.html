@@ -64,7 +64,7 @@ function drawCharts(){
 
     var bar_data = [
         new google.visualization.arrayToDataTable([
-            ['Year', 'Amount Speent'],
+            ['Year', 'Amount Spent'],
             ["2018", 44],
             ["2013", 31],
             ["2008", 12],
@@ -73,7 +73,7 @@ function drawCharts(){
             ["2023 B", 19]
         ]),
         new google.visualization.arrayToDataTable([
-            ['Year', 'Amount Speent'],
+            ['Year', 'Amount Spent'],
             ["2018", 34],
             ["2013", 37],
             ["2008", 32],
@@ -82,7 +82,7 @@ function drawCharts(){
             ["2023 B", 46]
         ]),
         new google.visualization.arrayToDataTable([
-            ['Year', 'Amount Speent'],
+            ['Year', 'Amount Spent'],
             ["2018", 64],
             ["2013", 21],
             ["2008", 72],
