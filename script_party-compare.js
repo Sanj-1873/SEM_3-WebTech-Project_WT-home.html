@@ -18,7 +18,7 @@ function drawCharts(){
         google.visualization.arrayToDataTable([
             ['Area', 'Money'],
             ['Education', 8],
-            ['Infra', 2],
+            ['Infra', 8],
             ['Millitary', 2],
             ['Agriculture', 2],
             ['Automobile', 2],

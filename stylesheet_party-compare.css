@@ -14,19 +14,23 @@ transition: all .5s ease-in-out;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 .grow:hover { 
 transform: scale(1.1); 
 transform-origin: center;
 }
 .education { 
+  border-radius: 20% 10% 20% 10%;
     background-image: linear-gradient(rgb(1, 38, 112),rgb(163, 255, 231));
 
  }
 .public {
+  border-radius: 20%;
     background-image: linear-gradient(red,rgb(0, 140, 255));
 }
 .agriculture { 
+  border-radius: 10% 20% 10% 20%;
     background-image: linear-gradient(green,yellow);
 }
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -34,7 +38,7 @@ transform-origin: center;
     background-color: transparent;
     width: 300px;
     height: 300px;
-    border: 1px solid #f1f1f1;
+    /*border: 1px solid #f1f1f1;*/
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -67,3 +71,45 @@ transform-origin: center;
   .flip-card-back {
     transform: rotateY(180deg);
   }
+  .home { z-index: 100;
+    background-image: linear-gradient( purple,grey);
+}
+
+.Home {
+  position: relative;
+  align-self: center;
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  border-color :5px black;
+  border-radius: 100%;
+  padding: 10px; 
+
+}
+
+
+.symbol{
+  position: relative;
+  border-radius: 20%;
+  height: 125px;
+  width: 125px;
+  align-content:center;
+}
+
+.symbol.partyA{
+  background-image: linear-gradient(orange,yellow);
+}
+
+.symbol.partyB{
+  background-image: linear-gradient(lime,beige);
+}
+
+.symbols{
+  position: relative;
+     
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
