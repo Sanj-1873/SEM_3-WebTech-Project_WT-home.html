@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient( rgb(250, 174, 67), rgb(180, 224, 222),rgb(59, 179, 4));
+}
+ .grow { 
+transition: all .5s ease-in-out; 
+}
+.circle {
+    width: 75px;
+    height: 75px;
+    border-color :5px black;
+    border-radius: 100%;
+    padding: 10px; 
+  
+}
+.symbol{
+
+    position: relative;
+    border-radius: 20%;
+    height: 125px;
+    width: 125px;
+    align-content:center;
+} 
