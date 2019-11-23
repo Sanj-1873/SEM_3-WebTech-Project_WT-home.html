@@ -2,280 +2,49 @@ body {
   display: flex;
   justify-content: center;
   background-image: linear-gradient( rgb(250, 174, 67), rgb(180, 224, 222),rgb(59, 179, 4));
+  color : white;
 }
 
-div.Country:onload{
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s linear 0s, opacity 300ms;
-}
-
-div.Country{
-  display: flex;
-  justify-items: center;
-}
-
-path.State{
+.India {
   z-index: 50;
-  fill:#0f3607;
-  stroke: #3d493b;
+  fill:#0f3607 ;
 }
-
 .glow {
   transition:all .5s ease-in-out;
 }
-
-.State.glow:hover {
+.glow:hover {
   fill:#40b52b;
   position: fixed;
 }
 
-.grow { 
-  transition: all .5s ease-in-out; 
-  z-index: 90;
-}
 
-.breakdown{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.grow { 
+transition: all .5s ease-in-out; 
+z-index: 90;
 }
-.comparision{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-}
+ 
 .grow:hover { 
-transform: scale(1.1); 
+transform: scale(1.2); 
 transform-origin: center;
+transition-duration: 1s;
+fill: #40b52b ;
+position: fixed;
 }
-.education { 
-border-radius: 20% 10% 20% 10%;
-  background-image: linear-gradient(rgb(1, 38, 112),rgb(163, 255, 231));
-
-}
-.public {
-border-radius: 20%;
-  background-image: linear-gradient(red,rgb(0, 140, 255));
-}
-.agriculture { 
-border-radius: 10% 20% 10% 20%;
-  background-image: linear-gradient(green,yellow);
-}
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  /*border: 1px solid #f1f1f1;*/
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
+.box {
   position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  top:10px;
+  left : 5px;
+  width: 100px;
+  max-height: 100px;   
+  padding: 50px;
+  z-index: 100;
+  
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-.home { z-index: 100;
-  background-image: linear-gradient( purple,grey);
-}
-
-.Home {
-position: relative;
-align-self: center;
-}
-
-.circle {
-width: 75px;
-height: 75px;
-border-color :5px black;
-border-radius: 100%;
-padding: 10px; 
-
-}
-
-
-.symbol{
-position: relative;
-border-radius: 20%;
-height: 125px;
-width: 125px;
-align-content:center;
-}
-
-.symbol.partyA{
-background-image: linear-gradient(orange,yellow);
-}
-
-.symbol.partyB{
-background-image: linear-gradient(lime,beige);
-}
-
-.symbols{
-position: relative;
-   
-display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.flex_box { 
-  display: flex;
-  position: absolute;
-  flex-direction:row;
-  justify-content: center;
- align-items: center; 
-  height: 100px; 
-  width: 100%; 
-}
-.grow { 
-  transition: all .5s ease-in-out; 
-  
-  }
-   
-  .grow:hover { 
-  transform: scale(1.2); 
-  transform-origin: center;
-  }
-  .flex_box { 
-      display: flex;
-      position: absolute;
-      flex-direction:row;
-      justify-content: center;
-     align-items: center; 
-      height: 100px; 
-      width: 100%; 
-   }
-   .home { z-index: 100;
-       background-image: linear-gradient( purple,grey);
-   }
-  
-  .Container_main_col {
-      display: flex;
-      flex-direction: column;
-      justify-content: normal;
-      position:relative;
-      height: -webkit-fill-available;
-      width: 50%;
-      align-items:stretch;
-  }
-  .Home {
-      position: relative;
-      align-self: center;
-  }
-  
-  .container_p_row {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      align-self:center; 
-      width:100%;
-      flex-grow:1;
-      justify-content:space-evenly;
-  
-  
-    
-  }
-  .box { 
-  padding: 10px; 
-  border-color :5px black;
-  align-self: center;
-  
-  
-  }
-  .leader {
-      position: relative;
-      align-self: center;
-  }
-  
-  .circle {
-      width: 75px;
-      height: 75px;
-      border-color :5px black;
-      border-radius: 100%;
-      padding: 10px; 
-  
-    }
-  
-  
-  
-  .Container_sym_col {
-      display: flex;
-      flex-direction: column; 
-      justify-content: space-evenly;
-      align-self:stretch;
-      position: relative;
-      height:100%;
-      width:100%; 
-      flex-grow : 2;
-      
-  }
-  
-  .comparision {
-      position: relative;
-      border-radius: 100%;
-      height: 125px;
-      width: 125px;
-      align-self:center;
-      background-image: linear-gradient(orange,yellow);
-  }
-  .Symbol_1 { 
+.State {
   position: relative;
-   }
-  
-  
-  .container_com_row {
-      display: flex;
-      flex-direction: row;
-      justify-content:space-evenly;
-      position: relative;
-      height:75%;
-      align-self:center; 
-      padding: 10px;
-    
-  }
-  
-  .education { 
-      position: relative;
-      background-image: linear-gradient(rgb(1, 38, 112),rgb(163, 255, 231));
-  
-   }
-  .public {
-      position: relative;
-      background-image: linear-gradient(red,blue);
-  }
-  .agriculture { 
-      position: relative; 
-      background-image: linear-gradient(green,yellow);
-   }
-  .house {
-      position: relative;
-  }
-  .cow {
-      position:relative;
-  }
-  .Child {
-      position: relative;
-  }
+  width: 100px;
+  height: 100px;
+   z-index: 100;
+  fill: black;
+}

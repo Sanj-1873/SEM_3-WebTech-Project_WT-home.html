@@ -1,6 +1,6 @@
 google.charts.load('current', {'packages':['corechart', "bar"]});
 google.charts.setOnLoadCallback(drawCharts);
-function drawPieChart(element, data, options){
+function drawPieChart(element, data, options,){
     var chart = new google.visualization.PieChart(element);
     chart.draw(data, options);
 }
@@ -10,7 +10,7 @@ function drawBarChart(element, data, options){
     chart.draw(data, options);
 }
 
-function drawCharts(){
+function drawCharts(state){
     var pie_arr=document.getElementsByClassName("pie");
     var bar_arr=document.getElementsByClassName("col");
 
