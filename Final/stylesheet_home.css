@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient( rgb(250, 174, 67), rgb(180, 224, 222),rgb(59, 179, 4));
+  color : white;
+  
+
+}
+
+.India {
+  z-index: 50;
+  fill:#0f3607 ;
+}
+.glow {
+  transition:all .5s ease-in-out;
+}
+.glow:hover {
+  fill:#40b52b;
+  position: fixed;
+}
+
+
+.grow { 
+transition: all .5s ease-in-out; 
+z-index: 90;
+}
+ 
+.grow:hover { 
+transform: scale(1.2); 
+transform-origin: center;
+transition-duration: 1s;
+fill: #40b52b ;
+position: fixed;
+}
+.box {
+  position: relative;
+  top:10px;
+  left : 5px;
+  width: 100px;
+  max-height: 100px;   
+  padding: 50px;
+  z-index: 100;
+  
+}
+
+.State {
+  position: relative;
+  width: 100px;
+  height: 100px;
+   z-index: 100;
+  fill: black;
+}
